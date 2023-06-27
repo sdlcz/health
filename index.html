@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "120px";
+      document.getElementById("main").style.marginLeft = "120px";
+    }
+
+    // Set the width of the sidebar to 0 and the left margin of the page content to 0
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <body>
+    <!-- Main content area -->
+    <main>
+      <header>
+        <!-- Incl title, logo and nav bar -->
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/a8/d1/9b/a8d19bfb6d5172adc87d65908c69137a.jpg"
+          alt=""
+          width="100"
+        />
+        <div class="title">
+          <h1>
+            <b>HealthVeg</b>
+            <br />
+            <i><>Food with health in mind<></i>
+          </h1>
+        </div>
+        <!--Access to each page -->
+        <nav id="main">
+          <p class="sidebar" id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              &times;
+            </a>
+            <a href="/">Home</a>
+            <a href="about.html"> About</a>
+            <a href="news.html"> News</a>
+            <a href="contact.html"> Contact</a>
+          </p>
+        </nav>
+      </header>
+      <div class="home">
+        <button class="openbtn" onclick="openNav()">
+          &#9776; Open Sidebar
+        </button>
+        <!-- Local link anchor tag to scroll to relevant image/paragraph  & Summary element to expand content-->
+        <details close class="cont">
+          <summary>
+            <h3>
+              <>
+              <b><i>Contents</i></b>
+              <>
+            </h3>
+          </summary>
+          <ul>
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#interest">Express Interest</a>
+          </ul>
+        </details>
+        <div class="1">
+          <h2 id="1"><i>#1</i></h2>
+          <img
+            class="thumbnail"
+            src="https://blogs.biomedcentral.com/on-medicine/wp-content/uploads/sites/6/2019/09/iStock-1131794876.t5d482e40.m800.xtDADj9SvTVFjzuNeGuNUUGY4tm5d6UGU5tkKM0s3iPk-620x342.jpg"
+            alt=""
+            width="250"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            reiciendis ea repellat aut? Deleniti incidunt voluptas error at
+            perferendis ipsum voluptatum ea. Iste impedit soluta numquam sed
+            quibusdam optio iure!
+          </p>
+        </div>
+
+        <div class="2">
+          <h2 id="2"><i>#2</i></h2>
+          <img
+            class="thumbnail"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrE8Flo05lOrY8T6Wx568FWA4Wx7DFZchh_wTe2ukSK0SsW2DLnNr4Acn6qVcc2HR0R0&usqp=CAU"
+            alt=""
+            width="250"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            veritatis nesciunt perferendis autem harum impedit necessitatibus
+            totam dolorem fugiat, omnis dolores in consequuntur tenetur.
+            Voluptatum debitis nisi incidunt corrupti totam.
+          </p>
+        </div>
+
+        <div class="3">
+          <h2 id="3"><i>#3</i></h2>
+          <img
+            class="thumbnail"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTviWehRWQ5IrWTgtXHLDaJInQ-w01GGPY0Mr-RK4AEzWcanroNPWohWe5J3-mV88OBc0&usqp=CAU"
+            alt=""
+            width="250"
+          />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro id
+            molestias alias ducimus, sint explicabo autem eaque nulla doloribus
+            a possimus corporis, dolorum similique facilis aspernatur eius
+            numquam aliquid dignissimos.
+          </p>
+        </div>
+
+        <div class="4">
+          <h2 id="4"><i>#4</i></h2>
+          <img
+            class="thumbnail"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ScXuAci4-bpMOoXh9UsCquYI08cjKfNEOw1sfzsZfiwH9l7VeeZPUTg19raQxWhaYMY&usqp=CAU"
+            alt=""
+            width="250"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+            praesentium cumque optio hic repellat excepturi nihil iure nam.
+            Aliquam a assumenda facilis ipsa possimus fugiat, numquam
+            perspiciatis ullam at exercitationem.
+          </p>
+        </div>
+
+        <!-- Express interest form -->
+        <div class="interest">
+          <form>
+            <h3 id="interest">Express your interest below:</h3>
+
+            <br />
+
+            <label>
+              Name:
+              <input
+                required
+                type="text"
+                minlength="3"
+                maxlength="35"
+                placeholder="Full Name"
+              />
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Email:
+              <input
+                class="email"
+                required
+                type="email"
+                placeholder="example@youremail.com"
+              />
+              <!-- check the email box size!!! -->
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Which is your favourite design?
+              <select required>
+                <option disabled>Select</option>
+                <option value="1">#1</option>
+                <option value="2">#2</option>
+                <option value="3">#3</option>
+                <option value="4">#4</option>
+              </select>
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Click to receive marketing notifications (optional)
+              <input type="checkbox" />
+            </label>
+
+            <br />
+
+            <label>
+              Do you agree with the T&Cs?*
+              <input required type="checkbox" />
+            </label>
+
+            <br />
+            <br />
+
+            <input type="submit" value="Express yourself 😀 " />
+
+            <br />
+            <br />
+          </form>
+        </div>
+      </div>
+      <!-- Incl footer and nav bar -->
+      <footer>
+        <nav>
+          <ul>
+            <p>
+              <a href="/">Home</a>| <a href="about.html">About</a>|
+              <a href="news.html">News</a>| <a href="contact.html">Contact</a>|
+              <!-- Click and open external link in a new tab -->
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>|
+              <a href="https://twitter.com/?lang=en-gb" target="_blank">
+                Twitter </a
+              >|
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </p>
+          </ul>
+          <p>&#169;2021 HealthVeg&#174; All rights reserved.</p>
+        </nav>
+      </footer>
+    </main>
+    <!--     <script src="sidebar.js"></script> -->
+  </body>
+</html>

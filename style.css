@@ -1,0 +1,202 @@
+/* Styling */
+/* universal CSS selector test, to reset margin & padding properties */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f742050;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: linear-gradient(
+      rgba(255, 255, 0, 1),
+      rgba(255, 255, 0, 0.4)
+    ),
+    url(https://static.toiimg.com/thumb/71348914.cms?width=680&height=512&imgsize=666073);
+  background-repeat: space repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+/* logo from external source with styling and located top left */
+.logo {
+  width: 150px;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  filter: drop-shadow(30px 10px 14px #085308);
+}
+
+/* center the title so it's more responsive on all devices!!!! */
+.title {
+  font-size: 35px;
+  color: purple;
+  background-color: #9acd32;
+  width: 600px;
+  border-radius: 30%;
+  padding: 70px;
+  margin: 0 auto 30px; /* 10px auto 30px Works in element.style inspection but not on this file */
+  filter: drop-shadow(40px 20px 14px #085308);
+}
+
+/* Sidebar */
+.sidebar {
+  margin: 0;
+  padding-top: 170px;
+  width: 120px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  display: block;
+  color: purple;
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgba(38, 161, 48);
+  color: white;
+}
+
+.opentbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 6.5px;
+  border: none;
+  background-color: #9acd32;
+  border-radius: 30px;
+  filter: drop-shadow(3px 5px 2px #085308);
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+/* sidebar end */
+
+div.home {
+  margin-left: 120px;
+  padding: 1px 16px;
+  height: 2280px;
+}
+
+header nav a {
+  color: purple;
+  font-size: 30px;
+}
+
+header nav {
+  text-align: center;
+}
+
+footer nav {
+  color: purple;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+/* when hovering over nav & footer pages turn red */
+a:hover {
+  color: red;
+}
+
+.home {
+  border: solid #085308;
+  border-radius: 30px;
+  padding: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 100px;
+
+  width: 80vw;
+}
+
+/* content alignment */
+.cont {
+  text-align: center;
+}
+
+h2 {
+  color: purple;
+}
+
+.thumbnail {
+  border: solid 3px purple;
+  border-radius: 50px;
+  width: 28vw;
+}
+
+/* Express interest form style */
+.interest {
+  border: solid #b91111;
+  border-radius: 10px;
+  padding: 0px 20px 0px 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.contact {
+  border: solid #b91111;
+  border-radius: 10px;
+  padding: 0px 20px 0px 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+input,
+textarea {
+  border: solid 1px #b91111;
+  /*   border: solid 1px purple; */
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* changed email input size as placeholder not fully visible */
+.email {
+  width: 10rem;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+}
+
+/* title: screens <1920, ensure title remains in the middle */
+@media screen and (max-width: 1920px) {
+  .title {
+    height: auto;
+    width: 40%;
+    text-align: center;
+    padding: 8px 0px 15px 20px;
+    margin: 0px 10px 30px 320px;
+  }
+}

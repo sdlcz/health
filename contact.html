@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <!-- Incl title, logo and nav bar -->
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/a8/d1/9b/a8d19bfb6d5172adc87d65908c69137a.jpg"
+          alt=""
+          width="100"
+        />
+        <h1 class="title">
+          <b>HealthVeg</b>
+          <br />
+          <i><>Food with health in mind<></i>
+        </h1>
+        <!--Access to each page -->
+        <nav>
+          <p>
+            <a href="/">Home</a>
+            <a href="about.html"> About</a>
+            <a href="news.html"> News</a>
+            <a href="contact.html"> Contact</a>
+          </p>
+        </nav>
+      </header>
+      <div class="home">
+        <div>
+          <img
+            class="thumbnail"
+            src="https://cdn.shopify.com/s/files/1/1740/3779/files/K_Js-contactUs-Banner-mobile_f030c107-0e2f-4805-a9eb-d5caa91b972c.jpg?12255107050669538851"
+            alt=""
+            width="500"
+          />
+        </div>
+
+        <!-- Summary element to expand contact & social media details -->
+        <details close>
+          <summary><strong>Contact Method</strong></summary>
+          <ul>
+            <li>+44 0000 000 000</li>
+            <li>healthveg@contoso.com</li>
+          </ul>
+
+          <!-- Contact form using summary element -->
+
+          <form class="contact">
+            <br />
+            <br />
+
+            <h3>Send us a message!</h3>
+            <label>
+              Name:
+              <input
+                required
+                minlength="3"
+                maxlength="35"
+                type="text"
+                placeholder="Full name"
+              />
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Email:
+              <input
+                class="email"
+                required
+                type="email"
+                placeholder="example@youremail.com"
+              />
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Phone Number:
+              <input required type="tel" placeholder="+44 0000 000 000" />
+            </label>
+
+            <br />
+            <br />
+
+            <label>
+              Query:
+              <br />
+              <textarea
+                required
+                minlength="5"
+                cols="30"
+                rows="10"
+                placeholder="How can we help?"
+              ></textarea>
+
+              <br />
+              <br />
+
+              <label>
+                Click here If you do not want to receive marketing notifications
+                <input type="checkbox" />
+              </label>
+
+              <br />
+              <br />
+
+              <label>
+                Preferred method of contact (Optional):
+                <br />
+
+                <input type="radio" name="method" value="eml" />
+                Email
+                <input type="radio" name="method" value="Phn" />
+                Phone
+              </label>
+              <br />
+              <br />
+
+              <input type="submit" value="Send" />
+
+              <br />
+              <br />
+            </label>
+          </form>
+        </details>
+
+        <details close>
+          <summary><strong>Follow us on:-</strong></summary>
+          <ol>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=en-gb" target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+          </ol>
+        </details>
+      </div>
+      <footer>
+        <nav>
+          <ul>
+            <p>
+              <a href="/">Home</a>| <a href="about.html">About</a>|
+              <a href="news.html">News</a>| <a href="contact.html">Contact</a>|
+              <!-- Open new tag and go to external link -->
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>|
+              <a href="https://twitter.com/?lang=en-gb" target="_blank"
+                >Twitter</a
+              >|
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </p>
+          </ul>
+          <p>&#169;2021 HealthVeg&#174; All rights reserved.</p>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
